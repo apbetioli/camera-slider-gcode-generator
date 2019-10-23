@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Camera slider gcode generator</h1>
+
+    <form id="form">
+        <label for="slider_length">Slider length (mm)</label>
+        <input id="slider_length" type="number" required>
+        <br/>
+
+        <label for="speed">Speed (mm/min)</label>
+        <input id="speed" type="number" required>
+        <br/>
+
+        <label for="object_distance">Object to slider distance (mm)</label>
+        <input id="object_distance" type="number" required>
+        <br/>
+
+        <label for="camera_distance">Camera to object distance (mm)</label>
+        <input id="camera_distance" type="number" required>
+        <br/>
+
+        <button>Generate gcode</button>
+    </form>
+
+    <textarea id="code" cols="80" rows="20"></textarea>
+
+    <script src="gcode.js"></script>
+</body>
+</html>
